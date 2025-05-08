@@ -109,6 +109,10 @@ public:
             }
             cout << endl;
         }
-    }
-    
+    } 
 };
+
+int main()
+Linkedlist mhs;
+int nim;
+char ch;
