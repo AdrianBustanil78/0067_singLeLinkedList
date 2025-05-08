@@ -63,7 +63,7 @@ public:
     {
         return (START == NULL);
     }
-    Boll search(int nim, Node **previous, Node **current)
+    boll search(int nim, Node **previous, Node **current)
     {
         *previous = START;
         *current = START;
@@ -91,5 +91,24 @@ public:
         delete current;
         return true;
     }
+
+    void traverse()
+    {
+        if (listEmpaty())
+        {
+            cout << "\nList Kosong \n";
+        }
+        else
+        {
+            cout << "\nData didalam list adalah:\n";
+            Node *currentNode = START;
+            while (currentNode != NULL)
+            {
+                cout << currentNode->noMhs << endl;
+                currentNode = currentNode->next;
+            }
+            cout << endl;
+        }
+    }
     
-}
+};
